@@ -1,0 +1,524 @@
+/* base */
+* {
+  box-sizing: border-box;
+}
+/* end base */
+
+/* layout */ 
+
+html {
+  background-color: #d6d1c4;
+}
+
+body {
+  background-color: #fff;
+  position: relative;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  width: 100%; /* mobile */
+  margin: auto;
+  border: 1px solid #8c9c90;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ol {
+  padding-left: 1em;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+li.active,
+li.hover,
+li.focus {
+  background-color: rgba(235, 107, 84, 0.67);
+}
+
+img, 
+iframe {
+  border: 2px solid #ccc;  
+}
+
+.jumbotron {
+  background: url("../img/DeathtoStock_Creative_Plant1_1200.jpg") right 80% no-repeat;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  height: 650px;
+  margin-bottom: 0;
+}
+
+.jumbotron h1  {
+  font-size: 3em;
+  color: #333;
+  padding: 12px;
+  /*background-color: rgba(209, 219, 197, 0.67);*/
+  position: absolute;
+  display: block;
+  top: 280px;
+  left: 60px;
+  background: rgb(254,254,253); /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(254,254,253,0.9) 0%, rgba(209,219,197,0.9) 77%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(254,254,253,0.9)), color-stop(77%,rgba(209,219,197,0.9))); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  rgba(254,254,253,0.9) 0%,rgba(209,219,197,0.9) 77%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  rgba(254,254,253,0.9) 0%,rgba(209,219,197,0.9) 77%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  rgba(254,254,253,0.9) 0%,rgba(209,219,197,0.9) 77%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  rgba(254,254,253,0.9) 0%,rgba(209,219,197,0.9) 77%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefd', endColorstr='#d1dbc5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  font-family: 'Rosario', sans-serif;
+}
+
+.jumbotron p {
+  margin: 2em auto;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #DBD3D3;
+  padding: 10px;
+  background-color: rgba(94, 105, 97, 0.68);
+  position: absolute;
+  display: block;
+  top: 360px;
+  left: 60px;
+  letter-spacing: 0.035em;
+}
+
+
+.jumbotron .header-text {
+/*
+  background: #8c9c90;
+  background-color: rgba(140, 156, 144, 0.5);
+  position: relative;
+  top: 2em;
+  margin: auto;*/
+}
+.header-services {
+  position: absolute;
+  display: block;
+  top: 380px;
+  left: 60px;
+  opacity: 0.8;
+  font-size: 1.7em;
+}
+
+.header-services ul {
+background: rgb(254,204,177); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(254,204,177,1) 0%, rgba(241,116,50,1) 50%, rgba(232,117,60,1) 100%, rgba(251,149,94,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,204,177,1)), color-stop(50%,rgba(241,116,50,1)), color-stop(100%,rgba(232,117,60,1)), color-stop(100%,rgba(251,149,94,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(232,117,60,1) 100%,rgba(251,149,94,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(232,117,60,1) 100%,rgba(251,149,94,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(232,117,60,1) 100%,rgba(251,149,94,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(232,117,60,1) 100%,rgba(251,149,94,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', endColorstr='#fb955e',GradientType=0 ); /* IE6-9 */
+
+}
+.header-services li {
+    display: inline-block;
+    padding: 0.3em;
+  }
+
+.header-services li a {
+    color: white;
+    }
+.header-services li.alternate a{
+  color: #333;
+}
+.container {
+  margin: 1em auto;
+  border-top: 1px solid #ccc;
+}
+.container-fluid {
+  padding: 2em 0;
+}
+
+.row {
+  clear: both;
+  margin: 0;
+}
+
+.jumbotron, 
+.glyph-heading h2, .glyph-heading span,
+#intro .inner {
+  text-align: center;
+}
+
+/* end layout */
+
+/* nav */
+/* aka Grain and Mortar */
+.nav-wrapper {
+  height: 51px;
+  width: 100%;
+  z-index: 15;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: black;
+  position: fixed;
+  background: #8c9c90;
+  background-color: rgba(140, 156, 144, 0.5);
+  transition: background 0.5s ease;
+  -webkit-transition: background 0.5s ease;
+  top: 0;
+  border-bottom: 1px solid #efefef;
+  width: 80%;
+}
+
+.nav {
+  float: right;
+}
+nav .container-fluid {
+  padding: 0;
+}
+.navbar {
+  width: 80%;
+  margin: auto;
+}
+
+.navbar a {
+  text-transform: none;
+  letter-spacing: 0.05em;
+          transition: color 600ms;
+  -webkit-transition: color 600ms;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.navbar>.container-fluid .navbar-brand {
+  margin-left: 0.3em;
+} 
+.navbar-fixed-top .navbar-collapse {
+  width: 98%;
+}
+.navbar-collapse.in {
+  background-color: rgba(170, 187, 175, 0.8);
+  width: 50%;
+  float: right;
+  border-radius: 3px;
+}
+}
+.navbar li a:hover, 
+.navbar .navbar-header a:hover,
+a:hover {
+  color: #081802;
+}
+.navbar-nav>li>a:hover, 
+.navbar-brand:hover,
+button.navbar-toggle:hover,
+button.navbar-toggle:focus {
+  background-color: #d6d1c4;
+}
+.dropdown-menu>.active>a, 
+.dropdown-menu>.active>a:focus, 
+.dropdown-menu>.active>a:hover  {
+  color: #333;
+  background-color: #d6d1c4;
+}
+
+button.navbar-toggle span {
+  background-color: #000;
+}
+/* end nav */
+
+
+/* Typography */
+
+h1, h2, .carousel-caption > h3 {
+  font-weight: bold;
+  font-family: 'Roboto Slab', serif;
+}
+
+h3 {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 0.5em 0;
+}
+h1, h1, h3, li, p, .navbar ul li a:hover, 
+.navbar .navbar-header a:hover, .navbar-brand {
+  /*font-family: 'Rosario', sans-serif;*/
+  color: #070707;
+}
+p, li {
+  line-height: 1.7em;
+  font-size: 1.1em;
+}
+
+a, 
+a:hover, 
+form label {
+  text-decoration: none;
+  color: #333;
+}
+
+/* form */
+
+div#form {
+  padding: 0;
+  background: inherit;
+
+}
+form {
+  margin-left: 3em;
+}
+.form-group {
+  width: 70%;
+}
+
+textarea {
+  display: block;
+}
+
+form label, 
+form p {    
+  font-size: 1.2em;
+}
+
+input[placeholder], 
+textarea[placeholder] {
+  font-weight: bold;
+} 
+
+.btn-default {
+  font-weight: bold;
+  background-color: #eb6b54;
+}
+
+/* /form */
+
+/* modal */
+.modal-header {
+  background-color: #d6d1c4;
+}
+.modal-header .close {
+  opacity: 1;
+  margin-top: -40px;
+}
+button.close span {
+  display: block;
+  background-color: #eb6b54;
+  padding: 10px;
+  color: black;grey
+}
+
+.modal-title {
+  font-size: 3em;
+}
+#modalFrame {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+}
+.modal-body p {
+ padding: 0.5em;
+}
+.modal-button {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+}
+
+.inner .modal-footer img {
+  float: none;
+  margin: 0;
+}
+/* /modal */
+
+/* div styles */
+
+#ethos h2 {
+  margin-top: 0em;
+}
+
+.anchor h2 {
+  margin: 1.9em 0 1em 0;
+  font-size: 2.2em;
+  text-align: center;
+}
+ .about ul {
+  list-style-type: none;
+}
+.about p, #team p, .about ul {
+  width: 92%;
+  margin: auto;
+  padding-bottom: 1em;
+}
+
+.inner {
+  background-color: #fff;
+  padding: 1em;
+}
+
+#services .inner {
+  padding: 0;
+}
+.inner ul {
+ padding: 0 0 0 1em;
+}
+
+.inner img {
+  margin: 1em 1em 0 1em;
+}
+
+.shout {
+  font-weight: bold;
+  font-size: 1.05em;
+}
+h3.team {
+  font-size: 1.6em;
+}
+#ethos .inner  {
+  background: inherit;
+}
+.lead-in {
+  font-weight: bold;
+}
+.quote {
+  font-style: italic;
+}
+
+#services ul {
+  list-style-image: url("../img/leaf.png");
+}
+
+#services li {
+  margin: 0 0 0 0.2em;
+  letter-spacing: -0.02em;
+  font-size: 1.2em;
+}
+#contact {
+line-height: 2em;
+}
+#contact h3 {
+  line-height: 2em;
+}
+#contact ul {
+  list-style-type: none;
+}
+
+#contact li {
+  font-size: 1.2em;
+  line-height: 1.9em;
+} 
+.indent {
+  margin-left: 1.5em;
+  display: inline-block;
+}
+#contact img {
+  border: none;
+  vertical-align: text-top;
+}
+.glyphicon, .fa {
+  margin-right: 0.8em;
+  vertical-align: middle;
+  color: #eb6b54;
+  width: 20px;
+}
+
+/* footer */
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  height: 45px;
+  background: #8c9c90;
+  background-color: rgba(140, 156, 144, 1);
+  transition: background 0.5s ease;
+  -webkit-transition: background 0.5s ease;
+  border-top: 1px solid #efefef;
+  width: 100%;
+  margin: auto;
+} 
+.modal-footer {
+  display: flex;
+  display: -webkit-flex;
+}
+.modal-footer .linkedin {
+  margin: 0.5em auto;
+  font-size: 1.1em;
+  width: 50%;
+  text-align: center;
+}
+
+.linkedin a, #contact .linkedin img {
+  margin: 0.2em ;
+  font-weight: bold;
+}
+.linkedin img {
+    border: none;
+}
+
+footer ul {
+  list-style-type: none;
+  margin-top: 0.5em;
+  padding: 0;
+}
+
+footer li {
+  display: inline;
+  padding: 0 2em;
+}
+
+.name {
+
+  margin-right: 2em;
+}
+.right {
+  display: flex;
+  display: -webkit-flex;
+  -webkit-justify-content: flex-end;
+}
+.copyright {
+  font-size: 0.8em;
+  float: left;
+  margin-left: 1em;
+}
+/* /footer */
+
+/* images in main body */
+.image-break {
+  background: url("../img/parkcollage.jpg") fixed center no-repeat;
+  height: 363px;
+}
+.testimonial {
+  background-color: #eb6b54;
+  padding: 4em;
+}
+.testimonial p {
+  color: #fff;
+  font-size: 1.4em;
+
+}
+.image-break2 {
+  background: url("../img/detailscollage.jpg") fixed center no-repeat;
+  height: 363px;
+}
+
+/* wufoo form */
+
+form.wufoo {
+  font-size: 1.2em;
+}
+.wufoo input.btTxt  {
+  background: none;
+ 
+}
+.wufoo .info {
+  display: none;
+}
+.wufoo .info h2 {
+  visibility: hidden;
+}
+.wufoo form li.focused {
+  background: none;
+}
+.wufoo .embed #container {
+  background-color: #cfd1bc;
+}

@@ -1,0 +1,40 @@
+.panel, a.navbar-brand {
+
+}
+
+/* end Bootstrap overrides */
+.panel-default>.panel-heading  {
+  text-align: center;
+  background: none;
+  border: none;
+}
+.panel-group .panel+.panel {
+   margin-top: 0; 
+}
+.panel-body {
+  background-color: #fff;
+  margin-top: 0.3em;
+}
+.panel-default {
+  border: none;
+  background: none;
+}
+.panel-body p {
+  color: #081802;
+  font-size: 1.4em;
+  padding: 10px;
+  float: left;
+
+}
+.panel-title {
+  font-weight: bold;
+  font-size: 1.4em;
+}
+.panel-title a:hover {
+  text-decoration: none;
+  color: grey;
+}
+.panel img {
+  margin: auto;
+
+}
